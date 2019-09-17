@@ -1,0 +1,20 @@
+
+{
+    "Switch": {
+        "prefix": "q_switch",
+        "body": [
+          "switch (${1:myVar}) {",
+          "  case 'CASE1':",
+          "    foo = \"bar\";",
+          "    break;",
+          "  case 'CASE2':",
+          "    foo = \"baz\"",
+          "    break;",
+          "  default:",
+          "    //console.error(\"No match found\");",
+          "}",
+          "$999"
+        ],
+        "description": "Switch"
+    }
+}

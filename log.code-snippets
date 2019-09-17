@@ -1,0 +1,12 @@
+{
+	"Function": {
+		"prefix": "q_fn",
+		"body": [
+		  "function ${1:myFunction}() {",
+		  "  ${2}",
+		  "}"
+		],
+		"description": "Function"
+	  },
+	  
+}

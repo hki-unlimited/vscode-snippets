@@ -1,0 +1,23 @@
+{
+	"JSON stringify": {
+		"prefix": "json_s",
+		"body": [
+		  "JSON.stringify(${1})"
+		],
+		"description": "JSON stringify"
+	  },
+	  "JSON stringify and log": {
+		"prefix": "json_sl",
+		"body": [
+		  "console.log(JSON.stringify(${1}));"
+		],
+		"description": "JSON stringify and log"
+	  },  
+	  "JSON parse": {
+		"prefix": "json_p",
+		"body": [
+		  "JSON.parse(${1})"
+		],
+		"description": "JSON parse"
+	  }  
+}

@@ -1,0 +1,23 @@
+{
+	"Generate Mobx store file": {
+		"prefix": "gen_mobx_store",
+		"body": [
+		  "import { createContext } from 'react'",
+		  "import { decorate, observable, computed, action } from 'mobx';",
+		  "",
+		  "class ${1:SearchStore} {",
+		  "  // result: any = {};",
+		  "  ${2}",
+		  "}",
+		  "",
+		  "decorate(${1:SearchStore}, {",
+		  "  // result: observable,",
+		  "  ",
+		  "});",
+		  "",
+		  "export { ${1:SearchStore} }",
+		  "export default createContext(new ${1:SearchStore}());"
+		],
+		"description": "Generate Mobx store file"
+	  }
+}

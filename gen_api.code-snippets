@@ -1,0 +1,19 @@
+{
+	"Generate new API file": {
+		"prefix": "gen_api",
+		"body": [
+		  "import rootUrl from \"./rootUrl\";",
+		  "import { fetchWithAuthorizationHeader } from \"../utils/apiUtils\";",
+		  "const baseUrl = rootUrl + \"/${2:basePrices}\";",
+		  "",
+		  "class ${1:BasePriceAPI} {",
+		  "    fetchSurcharges = async () => {",
+		  "        return await fetchWithAuthorizationHeader(\"/mock-service/basePricesSurcharges\");",
+		  "    }",
+		  "}",
+		  "",
+		  "export default new ${1:BasePriceAPI}();"
+		],
+		"description": "Generate new API file"
+	  }
+}

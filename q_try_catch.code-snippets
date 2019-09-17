@@ -1,0 +1,15 @@
+{
+    "Try catch": {
+        "prefix": "q_try_catch",
+        "body": [
+          "try {",
+          "    ${1}",
+          "} catch (e) {",
+          "    ${2}",
+          "} finally {",
+          "    //console.log(\"\");",
+          "}$999"
+        ],
+        "description": "Try catch"
+      }
+}
