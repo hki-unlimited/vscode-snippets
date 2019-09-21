@@ -1,0 +1,22 @@
+{
+	  "Map": {
+		"prefix": "q_map",
+		"body": [
+		  "${2:data} = ${2:data}.map(function(${3:entry}) {", 
+		  "  return ${3:entry};",
+		  "});"
+		],
+		"description": "Map"
+	  },
+	  "JSX map": {
+		"prefix": "q_jsx_map",
+		"body": [
+			"{${1:data}.map((${2:entry}: any, index: number) => { ",
+			"    return (",
+			"        ${3}",
+			"    );",
+			"})}"
+		],
+		"description": "JSX Map"
+	  }
+}

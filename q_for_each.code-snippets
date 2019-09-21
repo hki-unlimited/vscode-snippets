@@ -2,9 +2,8 @@
 	  "For each": {
 		"prefix": "q_for_each",
 		"body": [
-		  "${2:data}.map(function(${3:entry}) {",
+		  "${2:data}.forEach(function(${3:entry}) {",
 		  "  ${4}",
-		  "  return ${3:entry};",
 		  "});"
 		],
 		"description": "For each"
