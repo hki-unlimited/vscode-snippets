@@ -1,0 +1,75 @@
+{
+	"q_use_state": {
+		"prefix": "q_use_state",
+		"body": [
+		  "const [${1:myVar}, ${2:setMyVar}] = useState(${3:null});"
+		],
+		"description": "q_use_state"
+	},
+	"q_use_context": {
+		"prefix": "q_use_context",
+		"body": [
+		  "const ${1:myStore} = useContext(${2:MyStore});"
+		],
+		"description": "q_use_context"
+	},
+	"q_use_effect": {
+		"prefix": "q_use_effect",
+		"body": [
+		  "useEffect(() => {",
+		  "    ${1}",
+		  "}, []);"
+		],
+		"description": "q_use_effect"
+	  },
+	  "q_use_effect_with_cleanup": {
+		"prefix": "q_use_effect_with_cleanup",
+		"body": [
+		  "useEffect(() => {",
+		  "    ${1}",
+		  "    return function cleanup() {",
+		  "        ${2}",
+		  "    };",
+		  "}, []);"
+		],
+		"description": "q_use_effect_with_cleanup"
+	  },
+	  "q_use_callback": {
+		"prefix": "q_use_callback",
+		"body": [
+		  "const ${1:myMemoizedCallback} = useCallback(",
+		  "  () => {",
+		  "    doSomethingOnChangedDepencies(a, b);",
+		  "  },",
+		  "  [a, b],",
+		  ");"
+		],
+		"description": "q_use_callback"
+	  },
+	  "q_use_memo": {
+		"prefix": "q_use_memo",
+		"body": [
+		  "const ${myMemoizedValue} = useMemo(() => computeSomethingExpensive(a, b), [a, b]);"
+		],
+		"description": "q_use_memo"
+	  },
+	  "q_use_ref_vv": {
+		"prefix": "q_use_ref_vv",
+		"body": [
+		  "function MyComponent() {",
+		  "    const inputEl = useRef(null);",
+		  "    const onButtonClick = () => {",
+		  "    // `current` points to the mounted text input element",
+		  "        inputEl.current.focus();",
+		  "    };",
+		  "    return (",
+		  "    <>",
+		  "        <input ref={inputEl} type=\"text\" />",
+		  "        <button onClick={onButtonClick}>Focus the input</button>",
+		  "    </>",
+		  "    );",
+		  "}"
+		],
+		"description": "q_use_ref_vv"
+	  }
+}
