@@ -1,0 +1,11 @@
+{
+	"q_timeout": {
+		"prefix": "q_timeout",
+		"body": [
+		  "setTimeout(() => { ",
+		  "    ${1}",
+		  "}, ${2:0});"
+		],
+		"description": "q_timeout"
+	}
+}

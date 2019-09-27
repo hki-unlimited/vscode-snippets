@@ -7,7 +7,7 @@
 		"description": "JSON stringify"
 	  },
 	  "JSON stringify and log": {
-		"prefix": "json_sl",
+		"prefix": "json_l",
 		"body": [
 		  "console.log(JSON.stringify(${1}));"
 		],
