@@ -27,7 +27,7 @@
 		"body": [
 		  "useEffect(() => {",
 		  "    ${1}",
-		  "    return function cleanup() {",
+		  "    return () => { //cleanup",
 		  "        ${2}",
 		  "    };",
 		  "}, []);"
