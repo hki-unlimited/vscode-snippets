@@ -1,0 +1,25 @@
+{
+	"q_then_post": {
+		"prefix": "q_then_post",
+		"body": [
+			"${1:myAPI.myPostFn}({ ${2:payload}: ${3: payload} }).then(() => {",
+			"    ${4}",
+			"}).catch((error) => {",
+			"    errorStore.setErrorNotification(error.message);",
+			"});",
+			""
+		],
+		"description": "q_then_post"
+	},
+	"q_then_get": {
+		"prefix": "q_then_get",
+		"body": [
+			"${1:myAPI.myGetFn}().then(() => {",
+			"    ${2}",
+			"}).catch((error) => {",
+			"    errorStore.setErrorNotification(error.message);",
+			"});"
+		],
+		"description": "q_then_get"
+		}
+}
