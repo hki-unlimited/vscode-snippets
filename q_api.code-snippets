@@ -1,0 +1,29 @@
+{
+	"q_api_get": {
+		"prefix": "q_api_get",
+		"body": [
+			"${1:fetchRoutes} = async (${2}): Promise<any[]> => {",
+			"    const json = await fetchWithAuthorizationHeader(`${3}`);",
+			"    return json;",
+			"}"
+		],
+		"description": "q_api_get"
+	},
+	"q_api_post": {
+		"prefix": "q_api_post",
+		"body": [
+			"${1:updateRoutes} = async () => {",
+			"const json = await fetchWithAuthorizationHeader(`${2}`, {",
+			"        method: \"POST\",",
+			"        headers: {",
+			"            \"Content-Type\": \"application/json\",",
+			"            \"Access-Control-Allow-Origin\": baseUrl",
+			"        },",
+			"        body: JSON.stringify(${3:routes})",
+			"    });",
+			"    return json;",
+			"}"
+		],
+		"description": "q_api_post"
+	}
+}
