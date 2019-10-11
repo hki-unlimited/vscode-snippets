@@ -2,11 +2,10 @@
 	"Function": {
 		"prefix": "q_fn",
 		"body": [
-		  "function ${1:myFunction}() {",
-		  "  ${2}",
+		  "function ${1:myFunction}(${2}) {",
+		  "  ${3}",
 		  "}"
 		],
 		"description": "Function"
-	  },
-	  
+	  }
 }
