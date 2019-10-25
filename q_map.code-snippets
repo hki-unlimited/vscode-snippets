@@ -2,8 +2,8 @@
 	  "Map": {
 		"prefix": "q_map",
 		"body": [
-		  "${2:data} = ${2:data}.map(function(${3:entry}) {", 
-		  "  return ${3:entry};",
+		  "${2:data} = ${2:data}.map(${3:entry} => {", 
+		  "    return ${3:entry};",
 		  "});"
 		],
 		"description": "Map"
@@ -11,12 +11,21 @@
 	  "JSX map": {
 		"prefix": "q_jsx_map",
 		"body": [
-			"{${1:data}.map((${2:entry}: any, index: number) => { ",
+			"{${1:data}.map((${2:entry}: any, index: number) => {",
 			"    return (",
 			"        ${3}",
 			"    );",
 			"})}"
 		],
 		"description": "JSX Map"
-	  }
+	  },
+	  "JSX map, implicit return": {
+		"prefix": "q_jsx_map_impl",
+		"body": [
+			"{${1:data}.map((${2:entry}: any, index: number) => (",
+			"    ${3}",
+			"))}"
+		],
+		"description": "JSX Map"
+	  }	  
 }
