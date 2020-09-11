@@ -1,0 +1,11 @@
+{
+	  "For each": {
+		"prefix": "q_filter",
+		"body": [
+		  "${2:data}.filter(${3:entry} => {",
+		  "    ${4}",
+		  "});"
+		],
+		"description": "Filter"
+	  }
+}

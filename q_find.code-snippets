@@ -1,0 +1,11 @@
+{
+	  "For each": {
+		"prefix": "q_find",
+		"body": [
+		  "${2:data}.find(${3:entry} => {",
+		  "    ${4}",
+		  "});"
+		],
+		"description": "Find"
+	  }
+}

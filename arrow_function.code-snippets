@@ -1,0 +1,9 @@
+{
+	  "For each": {
+		"prefix": "q_af",
+		"body": [
+		  "() => {${1}}"
+		],
+		"description": "Arrow function"
+	  }
+}
