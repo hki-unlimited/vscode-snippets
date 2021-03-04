@@ -43,7 +43,7 @@
 		  "          setMyState(response.data);",
 		  "        }",
 		  "        fetchData();",
-		  "    }, []);"
+		  "    }, [fetchUrl]);"
 		],
 		"description": ""
 	  },
