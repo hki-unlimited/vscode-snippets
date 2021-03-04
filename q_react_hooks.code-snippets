@@ -34,6 +34,19 @@
 		],
 		"description": "q_use_effect_with_cleanup"
 	  },
+	  "q_use_effect_fetch_data_axios": {
+		"prefix": "q_use_effect_fetch_data_axios",
+		"body": [
+		  "    useEffect(() => {",
+		  "        async function fetchData() {",
+		  "          const response = await axios.get(fetchURL);",
+		  "          setMyState(response.data);",
+		  "        }",
+		  "        fetchData();",
+		  "    }, []);"
+		],
+		"description": ""
+	  },
 	  "q_use_callback": {
 		"prefix": "q_use_callback",
 		"body": [
