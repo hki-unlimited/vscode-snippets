@@ -37,13 +37,13 @@
 	  "q_use_effect_fetch_data_axios": {
 		"prefix": "q_use_effect_fetch_data_axios",
 		"body": [
-		  "    useEffect(() => {",
-		  "        fetchData = async () => {",
-		  "          const response = await axios.get(fetchURL);",
-		  "          setMyState(response.data);",
-		  "        }",
-		  "        fetchData();",
-		  "    }, [fetchUrl]);"
+		  "useEffect(() => {",
+		  "    const fetchData = async () => {",
+		  "      const response = await axios.get(fetchURL);",
+		  "      setMyState(response.data);",
+		  "    }",
+		  "    fetchData();",
+		  "}, [fetchUrl]);"
 		],
 		"description": ""
 	  },
