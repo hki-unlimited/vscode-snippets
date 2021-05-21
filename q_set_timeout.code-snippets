@@ -3,7 +3,7 @@
 		"prefix": "q_set_timeout",
 		"body": [
 		  "setTimeout(() => { ",
-		  "    ${1}",
+		  "  ${1}",
 		  "}, ${2:0});"
 		],
 		"description": "q_set_timeout"

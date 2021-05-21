@@ -1,0 +1,16 @@
+{
+	"Promise.all with fetch function": {
+		"prefix": "q_promise_all_with_fetch_function",
+		"body": [
+			"fetchBasePrices = async (): Promise<LineHaulData> => {",
+			"  const weightClassPromises = [];",
+			"  for (let i = 0; i < weightClasses.length; i++) {",
+			"    const weightClass = weightClasses[i];",
+			"    weightClassPromises.push(this.fetchBasePricesByWeightClassId(weightClass.id));",
+			"  }",
+			"  const data = await Promise.all(weightClassPromises);",
+			"}"
+		],
+		"description": "Promise.all with fetch function"
+	}
+}

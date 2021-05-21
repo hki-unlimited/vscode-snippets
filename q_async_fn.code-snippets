@@ -1,0 +1,12 @@
+{
+	"Async function": {
+	  "prefix": "q_async_fn",
+	  "body": [
+	    "const ${1:myFunction} = async () => {",
+	    "  ${2}",
+	    "}",
+	    "${3}"
+	  ],
+	  "description": "Async function"
+	}
+}

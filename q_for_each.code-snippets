@@ -3,7 +3,7 @@
 		"prefix": "q_for_each",
 		"body": [
 		  "${2:data}.forEach(${3:entry} => {",
-		  "    ${4}",
+		  "  ${4}",
 		  "});"
 		],
 		"description": "For each"

@@ -3,7 +3,7 @@
 		"prefix": "q_filter",
 		"body": [
 		  "const ${1:matchingEntries} = ${2:data}.filter(${3:entry} => (",
-		  "    ${4}",
+		  "  ${4}",
 		  "));"
 		],
 		"description": "Filter"

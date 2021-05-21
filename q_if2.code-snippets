@@ -1,0 +1,14 @@
+{
+"If else": {
+    "prefix": "q_if2",
+    "body": [
+      "if (${1:expression}) {",
+      "  ${2}",
+      "} else {",
+      "  ${3}",
+      "}",
+      "$999"
+    ],
+    "description": "If else"
+  }
+}
