@@ -17,7 +17,7 @@
 		"prefix": "q_use_effect",
 		"body": [
 		  "useEffect(() => {",
-		  "    ${1}",
+		  "  ${1}",
 		  "}, [${2}]);"
 		],
 		"description": "q_use_effect"
@@ -26,10 +26,10 @@
 		"prefix": "q_use_effect_with_cleanup",
 		"body": [
 		  "useEffect(() => {",
-		  "    ${1}",
-		  "    return () => { //cleanup",
-		  "        ${2}",
-		  "    };",
+		  "  ${1}",
+		  "  return () => { //cleanup",
+		  "    ${2}",
+		  "  };",
 		  "}, []);"
 		],
 		"description": "q_use_effect_with_cleanup"
@@ -70,17 +70,16 @@
 		"prefix": "q_use_ref_vv",
 		"body": [
 		  "function MyComponent() {",
-		  "    const inputEl = useRef(null);",
-		  "    const onButtonClick = () => {",
-		  "    // `current` points to the mounted text input element",
-		  "        inputEl.current.focus();",
-		  "    };",
-		  "    return (",
-		  "    <>",
-		  "        <input ref={inputEl} type=\"text\" />",
-		  "        <button onClick={onButtonClick}>Focus the input</button>",
-		  "    </>",
-		  "    );",
+		  "  const inputEl = useRef(null);",
+		  "  const onButtonClick = () => {",
+		  "  // `current` points to the mounted text input element",
+		  "    inputEl.current.focus();",
+		  "  };",
+		  "  return (",
+		  "  <>",
+		  "    <input ref={inputEl} type=\"text\" />",
+		  "    <button onClick={onButtonClick}>Focus the input</button>",
+		  "  </>",
 		  "}"
 		],
 		"description": "q_use_ref_vv"
