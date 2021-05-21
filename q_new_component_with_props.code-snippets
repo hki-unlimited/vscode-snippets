@@ -1,0 +1,21 @@
+{
+	"New component with props": {
+	  "prefix": "q_new_component_with_props",
+	  "body": [
+	    "import React from 'react';",
+	    "import Company from '~models/Company';",
+	    "",
+	    "interface Props {",
+	    "  company: Company;",
+	    "}",
+	    "",
+	    "const MyComponent: React.FC<Props> = ({ company }) => {",
+	    "  return <div>MY COMPONENT</div>;",
+	    "};",
+	    "",
+	    "export default MyComponent;",
+	    ""
+	  ],
+	  "description": "New component with props"
+	}
+}

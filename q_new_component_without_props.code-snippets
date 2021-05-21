@@ -1,0 +1,16 @@
+{
+	"New component without props": {
+	  "prefix": "q_new_component_without_props",
+	  "body": [
+	    "import React from 'react';",
+	    "",
+	    "const MyComponent: React.FC = () => {",
+	    "  return <div>MY COMPONENT</div>;",
+	    "};",
+	    "",
+	    "export default MyComponent;",
+	    ""
+	  ],
+	  "description": "New component without props"
+	}
+}
