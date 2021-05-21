@@ -2,7 +2,7 @@
 	"Promise.all": {
 	  "prefix": "q_promise_all",
 	  "body": [
-	    "const weightClassPromises = [];",
+	    "const weightClassPromises: Promise<any> = [];",
 	    "for (let i = 0; i < weightClasses.length; i++) {",
 	    "  const weightClass = weightClasses[i];",
 	    "  weightClassPromises.push(this.fetchBasePricesByWeightClassId(weightClass.id));",
