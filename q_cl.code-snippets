@@ -1,0 +1,9 @@
+{
+	"Console log": {
+	  "prefix": "q_cl",
+	  "body": [
+	    "console.log(${1});${2}"
+	  ],
+	  "description": "Console log"
+	}
+}
