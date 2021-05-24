@@ -1,0 +1,9 @@
+{
+	"Console log, JSON stringify": {
+	  "prefix": "q_cls",
+	  "body": [
+	    "console.log(JSON.stringify(${1}));${2}"
+	  ],
+	  "description": "Console log, JSON stringify"
+	}
+}
