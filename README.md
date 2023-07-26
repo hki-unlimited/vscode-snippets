@@ -3,7 +3,8 @@ Quark snippets for VS code
 
 Asennus:
 
-C:\Users\tahkave\AppData\Roaming\Code\User\snippets
+cd "/Users/vesatahkavuori/Library/Application Support/Code/User/snippets/"
+git clone git@github.com:hki-unlimited/vscode-snippets.git
 
 Käytä snippet generatoria:
 
