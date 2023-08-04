@@ -1,0 +1,11 @@
+{
+	"Describe": {
+		"prefix": "q_describe",
+		"body": [
+		  "describe(\"${1}\", () => {",
+		  "    ${2}",
+		  "});"
+		],
+		"description": "Describe"
+	}
+}
